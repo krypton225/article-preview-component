@@ -2,9 +2,15 @@
   "name": "article-preview-component",
   "private": true,
   "scripts": {
-    "dev": "bunx http-server ."
+    "dev": "concurrently \"bunx http-server .\" \"bun run sass:watch\"",
+    "sass:watch": "sass --watch src/scss:dist --load-path=node_modules"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1",
+    "sass": "^1.102.0"
+  },
+  "dependencies": {
+    "reset-zone": "^5.0.0"
   }
 }
