@@ -1,0 +1,10 @@
+{
+  "name": "article-preview-component",
+  "private": true,
+  "scripts": {
+    "dev": "bunx http-server ."
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
